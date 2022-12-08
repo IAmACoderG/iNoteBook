@@ -47,13 +47,14 @@ const SignUp = (props) => {
         <div className="mb-3">
           <label htmlFor="name" className="form-label" >Name</label>
           <input type="name" className="form-control" value={credentials.name} onChange={onChangeData} id="name" name='name' aria-describedby="emailHelp" />
-          <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
+
         <div className="mb-3">
           <label htmlFor="email" className="form-label" >Email address</label>
           <input type="email" className="form-control" value={credentials.email} onChange={onChangeData} id="email" name='email' aria-describedby="emailHelp" minLength={5} required />
           <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
+
         <div className="mb-3">
           <label htmlFor="password" className="form-label">Password</label>
           <input type="password" className="form-control" id="password" name='password' value={credentials.password} onChange={onChangeData} minLength={5} required />
